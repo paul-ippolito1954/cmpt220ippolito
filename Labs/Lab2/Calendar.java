@@ -1,6 +1,9 @@
 /* Paul Ippolito
 CMPT220
 2/5/2017
+Due 2/7/17
+Lab 2 assignment
+Version 1.01
 This program gets a month and year from
 the user. Based on the input, the program then 
 tells the user how many days were in that month

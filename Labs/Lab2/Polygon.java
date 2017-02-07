@@ -4,6 +4,7 @@ CMPT220
 Exercise 4.5
 Lab 2
 2/6/2017
+Due 2/7/17
 Version 1.0
 This program prompts the user to enter
 the number of sides and the length,

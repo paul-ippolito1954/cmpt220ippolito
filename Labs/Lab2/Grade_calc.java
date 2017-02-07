@@ -1,6 +1,9 @@
 /* Paul Ippolito
 CMPT220
 1/30/17
+Lab 2 assignment
+Version 1.0
+Due 2/7/17
  This program gets input from the user of their
  averages for each of the four rubrics from the
  CMPT220 course and then calculates the final 

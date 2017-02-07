@@ -3,6 +3,8 @@ Paul Ippolito
 CMPT220
 2/5/2017
 Lottery.java
+Due 2/7/17
+Lab 2 Assignment
 Version 1.01
 This Program generates a lottery then
 prompts the user to guess a lottery 

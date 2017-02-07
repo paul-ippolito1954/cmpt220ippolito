@@ -1,6 +1,9 @@
 /* Paul Ippolito
 CMPT220
 1/30/17
+Version 1.0
+due 2/7/17
+Lab 2 assignment
 This program recieves three integers
 from the user and sorts them in order
 from least to greatest */

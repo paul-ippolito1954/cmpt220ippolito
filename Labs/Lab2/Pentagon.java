@@ -2,8 +2,8 @@
 Created by: Paul Ippolito
 CMPT220
 Lab 2 assignment
-Exercise 4.1
-
+Version 1.0
+Due 2/7/17
 This program prompts the user to enter
 the length from the center of a pentagon
 to a vertex and subsequently computes the 
