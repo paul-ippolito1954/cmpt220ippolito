@@ -14,14 +14,18 @@ import java.util.Scanner;
 public class Partition {
   public static void main(String[] args){
     Scanner input = new Scanner(System.in);
-    System.out.println("First number = size of array, second number = pivot ");
-    System.out.print("Enter a list:");
+    System.out.println("First number = size of array, second number = pivot");
+    System.out.print("Enter a list: ");
     int size = input.nextInt();
     int[] list = new int[size];
     for (int i = 0; i < size; i++) list[i] = input.nextInt();
 
     partition(list);
-    System.out.println(list);
+    // Prints new partitoned list
+    System.out.println("Your partioned list is ");
+    for (int i = 0; i < size; i++){
+      System.out.print(list[i] + " ");
+    }
   }
   
   public static int partition(int[] list){
@@ -53,4 +57,5 @@ public class Partition {
     }
     return 0;
   }
+ 
 }
