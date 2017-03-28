@@ -4,11 +4,11 @@ Author: Paul Ippolito
 Course: CMPT220
 Assignment: Project 1
 Due: 3/28/17
-Version 1.0
-* This program recieves the size of two vector,
-* then the elements of the vector, and then uses
+Version 1.1
+* This program recieves the size of two arrays,
+* then the elements of the arrays, and then uses
 * the principle of convolution to multiply the two
-* vectors and returns the multiplied vector.
+* arrays and returns the multiplied array.
 */
 
 import java.util.Scanner;
@@ -19,19 +19,17 @@ public class Convolution {
 
     Scanner input = new Scanner(System.in);
 
-    System.out.println("Please enter the size of the first vector: ");
+    System.out.println("Please enter the size of the first array: ");
 
     int size = input.nextInt();
 
     double[] array = new double[size];
 
-    System.out.println("Please enter the size of the 2nd vector: ");
+    System.out.println("Please enter the size of the 2nd array: ");
 
     size = input.nextInt();
 
-    System.out.println("Please enter the elements of the 1st vector: ");
-
-   
+    System.out.println("Please enter the elements of the 1st array: ");
 
        for (int vFirst = 0; vFirst < array.length; vFirst++){
 
@@ -39,7 +37,7 @@ public class Convolution {
 
     }
 
-    System.out.println("Please enter the elements of the 2nd vector: ");
+    System.out.println("Please enter the elements of the 2nd array: ");
 
     double[] array2 = new double[size];
 
@@ -54,7 +52,8 @@ public class Convolution {
     double[] vResult = convolveVectors(array, array2);
 
    
-
+       // Prints convolved array
+       System.out.println("The convolved array is: ");
        for (int vFirst = 0; vFirst < vResult.length; vFirst++){
 
       System.out.print((int) vResult[vFirst] + " ");
@@ -64,29 +63,21 @@ public class Convolution {
   }
 
  
-
+// Method to convolve arrays
   public static double[] convolveVectors(double[] vFirst, double[] vSecond) {
 
     double[] vResult = new double[(vFirst.length + vSecond.length) - 1];
 
     for (int cResult = 0; cResult < vResult.length; cResult++){
 
-      vResult[cResult] = 0;
-
-      for (int shift = 0; shift < 51; shift++){
-
-        double sum = 0;
-
-        if (cResult - shift >= 0 && cResult - shift < vFirst.length){
-
-          if (cResult >= 0 && cResult < vSecond.length)
-
-            sum = (vFirst[cResult - shift] * vSecond[shift]);
-
+      for (int shift = 0; shift < vSecond.length; shift++){
+        
+        // Keeps code from going out of bounds but still convolves.
+        try {
+          vResult[cResult] += (vFirst[cResult - shift] * vSecond[shift]);
+        } catch (IndexOutOfBoundsException e){
+          
         }
-
-        vResult[cResult] += sum;
-
       }
 
     }
