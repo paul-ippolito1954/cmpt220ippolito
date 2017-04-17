@@ -20,7 +20,7 @@ public class Rectangle {
     for (int i = 0; i < 2; i++){
       System.out.println("MyRec2 " + (i+1) +":");
       System.out.print("Area = " + rectangles[i].getArea());
-      System.out.println("Perimeter = " + rectangles[i].getPerimeter() +"\n");
+      System.out.println(" Perimeter = " + rectangles[i].getPerimeter() +"\n");
     }
 }
 
