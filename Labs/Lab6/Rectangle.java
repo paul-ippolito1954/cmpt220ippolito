@@ -1,5 +1,5 @@
 /**
-File: .java
+File: Rectangle.java
 Author: Paul Ippolito
 Course: CMPT220
 Assignment: Lab 6
