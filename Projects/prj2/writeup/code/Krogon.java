@@ -36,7 +36,7 @@ public class Krogon{
     game(); //starts the game
   }
   
-  //Function that controls entire game
+  //Method that controls entire game
   public static void game(){
     Scanner input = new Scanner(System.in);
     
@@ -68,7 +68,7 @@ public class Krogon{
     ArrayList<String> inventory = new ArrayList<String>();
     
     //Variables changed within game
-    int moves = 20;
+    int moves = 30;
     int points = 0;
     String currLoc = start;
     System.out.println(start);
