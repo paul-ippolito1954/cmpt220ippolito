@@ -36,7 +36,10 @@ public class Krogon{
     game(); //starts the game
   }
   
-  //Method that controls entire game
+  //Method that controls entire game:
+  // Includes while true loop that checks players
+  // input, keeps track of players inventory,
+  // and decides endings as well as whether to play again or not
   public static void game(){
     Scanner input = new Scanner(System.in);
     
@@ -221,7 +224,7 @@ public class Krogon{
       }
       // help command
       else if (cmd.equals("h") || cmd.equals("help")){
-        System.out.println("Commands are n, s, e, w, h, q, p, x, and t.");
+        System.out.println("Commands are n, s, e, w, h, q, p, x, t, and i.");
         System.out.println("You can also enter the words take or search.");
         continue;
       }
@@ -235,6 +238,10 @@ public class Krogon{
         System.out.println("You currently have " + points + " points.");
         continue;
       }
+      
+      // Check inventory
+      else if (cmd.equals("i") || cmd.equals("inventory"))
+        System.out.println(inventory);
       
       //Search for items
       else if (cmd.equals("x") || cmd.equals("search")){
