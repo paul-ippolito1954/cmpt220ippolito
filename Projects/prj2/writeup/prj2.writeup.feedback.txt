@@ -1,0 +1,14 @@
+38 pts
+
+The project attempts to make a text-based game. 
+The idea has good merit. 
+
+However, there are some issues...
+Writeup:
+- There are typos in the document. -1pt
+
+Code:
+- There are typos or gramatical errors. -1pt
+
+Overall:
+- Decent work average of an SD1 student. 
